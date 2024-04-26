@@ -465,7 +465,6 @@ nav .nav-bar .logo a {
   display: flex;
   align-items: center;
   justify-content: right;
-  background-color: var(--octonary-color); 
   color: white;  
   font-size: 14px; 
   border-radius: 10px;
