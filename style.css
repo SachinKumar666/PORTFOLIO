@@ -39,7 +39,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    height: 65px;
+    height: 5rem;
     width: 100%;
     background-color: var(--nav-color);
     z-index: 100;
@@ -293,7 +293,7 @@ nav .nav-bar .logo a {
   /* About Section */
   #about {
     max-width: 1200px;
-    margin: 2rem auto;
+    margin: 4rem auto;
     padding: 0 1rem;
     position: relative;
   }
@@ -317,6 +317,15 @@ nav .nav-bar .logo a {
   .about-image img {
     max-width: 400px;
     height: auto;
+  }
+
+  .about-text{
+    width: 50%;
+    color: black;
+  }
+
+  .about-text ul li{
+    font-size: 1.1rem;
   }
   
   /* Skills Section */
@@ -442,7 +451,7 @@ nav .nav-bar .logo a {
 
 .progress {
   height: 100%;
-  background-color: var(--septenary-color);
+  background-color: var(--nav-color);
   transition: width 0.5s ease;
   width: 100%;  
 }
