@@ -38,8 +38,8 @@ body {
 
 .container {
     display: flex;
-    max-width: 1000px;
-    width: 95%;
+    max-width: 950px;
+    width: 100%;
     height: 86vh;
     gap: 50px;
     /* cursor: ur("assets/icons/Aero-Normal_cursor.cur"), auto; */
@@ -96,7 +96,7 @@ body {
 }
 
 .nav-icons a img {
-    height: 45px;
+    height: 40px;
     margin-bottom: 5px;
     transition: color 0.3s ease;
     background-color: var(--main-content-bg);
