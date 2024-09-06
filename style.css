@@ -232,12 +232,7 @@ body {
     margin-bottom: 60px;
     padding-top: 6rem;
 }
-
-/* Responsive Design */
-
-
-
-
+ 
 /* .line {
     margin: 0;
     --s: 44px;
@@ -484,14 +479,9 @@ body {
     padding-bottom: 10px;
 }
 
-
-/* Responsive styles for hero section and related elements */
-
-
-
-
+ 
 /* About Section Styles */
-/* About Section Styles */
+ 
 #about {
     padding: 60px 60px;
     color: var(--text-color3);
@@ -717,10 +707,7 @@ body {
     font-weight: bold;
     font-size: .6rem;
 }
-
  
-
-
 /* Projects Section Styling */
 
 #projects {
@@ -781,11 +768,9 @@ body {
 
 .project-links {
     position: absolute;
-    top: -40px;
-    /* Adjust this value to control the distance above the overlay */
+    top: -40px; 
     left: 50%;
-    transform: translateX(-50%);
-    /* Center the button horizontally */
+    transform: translateX(-50%); 
     display: flex;
     justify-content: center;
     opacity: 0;
@@ -795,8 +780,7 @@ body {
 
 .project-wrapper:hover .project-links {
     opacity: 1;
-    transform: translate(-50%, 0);
-    /* Show the button smoothly */
+    transform: translate(-50%, 0); 
 }
 
 .overlay {
@@ -1227,9 +1211,44 @@ body {
         top: -30px;
     }
 
+    
+    .project-wrapper {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .project-links {
+        position: static;
+        opacity: 1;
+        transform: none;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+    }
+
     .project-btn {
-        font-size: 12px;
-        padding: 5px 10px;
+        display: inline-block;
+        margin: 0;
+        transform: none;
+    }
+
+    .project-btn:hover {
+        background-color: var(--btn-color);
+        color: var(--text-color);
+        transform: none;
+    }
+
+    .project-btn:active {
+        transform: none;
+    }
+
+    .project-image:hover img {
+        transform: none;
+    }
+
+    .project-image:hover img {
+        transform: none;
     }
 
     .timeline-content h3 {
@@ -1263,4 +1282,7 @@ body {
     }
 }
 
- 
+
+
+
+
