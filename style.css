@@ -61,8 +61,8 @@ body {
 
 
 .profile-image img {
-    width: 9rem;
-    height: 9rem;
+    width: 8rem;
+    height: 8rem;
     border-radius: 20px 20px;
     /* background-color: #90ff90; */
     display: flex;
