@@ -908,118 +908,6 @@ body {
 }
 
 
-/* CONTACT SECTION STYLING */
-
-
-#contact {
-    padding: 30px 60px;
-    text-align: center;
-}
-
-#contact h2 {
-    text-align: center;
-    margin-bottom: 3rem;
-    background-color: var(--btn-color);
-    box-shadow: rgb(117, 187, 249) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-    color: var(--text-color);
-    font-size: 1.4em;
-    position: relative;
-    display: inline-block;
-    padding: 5px 30px;
-    border-radius: 5px;
-    animation: fadeIn 1s ease-out;
-}
-
-/* 
-.contact-form-wrapper {
-    max-width: 640px;
-    margin: auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form-wrapper iframe {
-    width: 100%;
-    height: 780px;
-    border: 0;
-}
-
-.confirmation-message {
-    display: none;
-    margin-top: 20px;
-    font-size: 18px;
-    color: green;
-} */
-
-
-.contact-form {
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: left;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-.form-group input:hover,
-.form-group textarea:hover {
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-    transition: all ease .2s;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    border-color: #007bff;
-    outline: none;
-}
-
-.btn {
-    text-align: center;
-    margin-bottom: 3rem;
-    background-color: var(--body-bg);
-    color: var(--text-color2);
-    font-size: 1em;
-    position: relative;
-    box-shadow: rgb(0, 24, 45) 3px 3px 6px 0px inset, #ffffff80 -3px -3px 6px 1px inset;
-    display: inline-block;
-    padding: 5px 30px;
-    border-radius: 5px;
-    animation: fadeIn 1s ease-out;
-}
-
-.btn:hover {
-    background-color: var(--btn-color);
-    color: var(--text-color);
-    box-shadow: rgb(117, 187, 249) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-}
-
-.btn-center {
-    display: block;
-    width: 100%;
-    text-align: center;
-}
-
-
 #thanks {
     height: 4rem;
     background-color: var(--btn-color);
@@ -1280,7 +1168,7 @@ body {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 360px) {
     .main-img img {
         width: 70vw;
         height: 70vw;
