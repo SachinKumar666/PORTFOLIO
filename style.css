@@ -428,54 +428,6 @@ body {
 }
 
 
-/* CONTACT SECTION STYLING */
-
-
-#contact {
-    padding: 30px 60px;
-    text-align: center;
-}
-
-#contact h2 {
-    text-align: center;
-    margin-bottom: 3rem;
-    background-color: var(--btn-color);
-    box-shadow: rgb(117, 187, 249) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-    color: var(--text-color);
-    font-size: 1.4em;
-    position: relative;
-    display: inline-block;
-    padding: 5px 30px;
-    border-radius: 5px;
-    animation: fadeIn 1s ease-out;
-} 
-
-.btn {
-    text-align: center;
-    margin-bottom: 3rem;
-    background-color: var(--body-bg);
-    color: var(--text-color2);
-    font-size: 1em;
-    position: relative;
-    box-shadow: rgb(0, 24, 45) 3px 3px 6px 0px inset, #ffffff80 -3px -3px 6px 1px inset;
-    display: inline-block;
-    padding: 5px 30px;
-    border-radius: 5px;
-    animation: fadeIn 1s ease-out;
-}
-
-.btn:hover {
-    background-color: var(--btn-color);
-    color: var(--text-color);
-    box-shadow: rgb(117, 187, 249) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-}
-
-.btn-center {
-    display: block;
-    width: 100%;
-    text-align: center;
-}
-
 .social-links a {
     font-size: 24px;
     margin-right: 15px;
@@ -766,7 +718,76 @@ body {
     font-size: .6rem;
 }
 
- 
+
+/* Certificate Section Styling */
+/* .certificate {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.certificate h2 {
+    font-size: 2.5rem;
+    color: var(--heading-color);
+    margin-bottom: 40px;
+    animation: fadeIn 1s ease-out;
+}
+.certificate .certificate-card h3{
+    font-size: 1rem;
+}
+
+.certificates-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    justify-items: center;
+}
+
+.certificate-card {
+    background-color: var(--main-content-bg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    width: 380px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.certificate-card:hover {
+    transform: translateY(-3px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.certificate-card h3 {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin: 0;
+    text-align: center;
+}
+
+.view-certificate {
+    background-color: var(--body-bg);
+    box-shadow: rgb(10, 0, 52) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 10px auto 0;
+    transition: background-color 0.3s ease;
+}
+
+.view-certificate:hover {
+    background-color: var(--icon-color);
+    box-shadow: rgb(10, 0, 52) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+  */
+
+
+
 /* Projects Section Styling */
 
 #projects {
@@ -865,7 +886,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 90%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
@@ -952,6 +973,54 @@ body {
 
 .timeline-item:nth-child(odd) .timeline-content.left,
 .timeline-item:nth-child(even) .timeline-content.right {
+    text-align: center;
+}
+
+
+/* CONTACT SECTION STYLING */
+
+
+#contact {
+    padding: 30px 60px;
+    text-align: center;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    background-color: var(--btn-color);
+    box-shadow: rgb(117, 187, 249) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    color: var(--text-color);
+    font-size: 1.4em;
+    position: relative;
+    display: inline-block;
+    padding: 5px 30px;
+    border-radius: 5px;
+    animation: fadeIn 1s ease-out;
+} 
+.btn {
+    text-align: center;
+    margin-bottom: 3rem;
+    background-color: var(--body-bg);
+    color: var(--text-color2);
+    font-size: 1em;
+    position: relative;
+    box-shadow: rgb(0, 24, 45) 3px 3px 6px 0px inset, #ffffff80 -3px -3px 6px 1px inset;
+    display: inline-block;
+    padding: 5px 30px;
+    border-radius: 5px;
+    animation: fadeIn 1s ease-out;
+}
+
+.btn:hover {
+    background-color: var(--btn-color);
+    color: var(--text-color);
+    box-shadow: rgb(117, 187, 249) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.btn-center {
+    display: block;
+    width: 100%;
     text-align: center;
 }
 
@@ -1214,44 +1283,7 @@ body {
         text-align: center;
         font-size: 14px;
     }
-}
-/* 
-@media screen and (max-width: 360px) {
-    .main-img img {
-        width: 70vw;
-        height: 70vw;
-        max-width: 150px;
-        max-height: 150px;
-    }
-
-    .profile-image img {
-        width: 4rem;
-        height: 4rem;
-        margin-bottom: 1rem;
-    }
-
-    .project-wrapper {
-        max-width: 250px;
-    }
-
-    .project-btn {
-        font-size: 10px;
-        padding: 4px 8px;
-    }
-
-    .timeline-content h3 {
-        font-size: 1rem;
-    }
-
-    .project-description {
-        font-size: 0.8rem;
-    }
-
-    .tech-stack span {
-        font-size: 0.6rem;
-        padding: 1px 4px;
-    }
-} */
+} 
 
 /* Scrolling effect for mobile */
 @media screen and (max-width: 768px) {
@@ -1264,8 +1296,4 @@ body {
         scroll-snap-stop: always;
     }
 }
-
-
-
-
-
+ 
