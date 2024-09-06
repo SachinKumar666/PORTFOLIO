@@ -717,76 +717,7 @@ body {
     font-weight: bold;
     font-size: .6rem;
 }
-
-
-/* Certificate Section Styling */
-/* .certificate {
-    margin-top: 40px;
-    text-align: center;
-}
-
-.certificate h2 {
-    font-size: 2.5rem;
-    color: var(--heading-color);
-    margin-bottom: 40px;
-    animation: fadeIn 1s ease-out;
-}
-.certificate .certificate-card h3{
-    font-size: 1rem;
-}
-
-.certificates-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    justify-items: center;
-}
-
-.certificate-card {
-    background-color: var(--main-content-bg);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-    width: 380px;
-    margin-top: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: transform 0.3s, box-shadow 0.3s;
-    position: relative;
-}
-
-.certificate-card:hover {
-    transform: translateY(-3px);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
-
-.certificate-card h3 {
-    font-size: 1.2rem;
-    color: var(--text-color);
-    margin: 0;
-    text-align: center;
-}
-
-.view-certificate {
-    background-color: var(--body-bg);
-    box-shadow: rgb(10, 0, 52) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    margin: 10px auto 0;
-    transition: background-color 0.3s ease;
-}
-
-.view-certificate:hover {
-    background-color: var(--icon-color);
-    box-shadow: rgb(10, 0, 52) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-}
-
-  */
-
-
+ 
 
 /* Projects Section Styling */
 
@@ -1193,6 +1124,40 @@ body {
         border-radius: 50%;
     } */
 
+    
+    .sidebar{
+        margin-bottom: -40px;
+    }
+
+    .profile-image img{
+        height: 55px;
+        width: auto;
+    }
+
+    .nav-icons a img {
+        height: 35px;
+        margin-bottom: 5px;
+        transition: color 0.3s ease;
+        background-color: var(--main-content-bg);
+        padding: 10px;
+        margin-left: -15px;
+        border-radius: 500px;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    }
+    
+    .nav-icons a span {
+        background-color: var(--main-content-bg);
+        padding: 4px 8px;
+        border-radius: 15px;
+        font-size: 8px;
+        margin-left: -15px;
+        margin-top: -10px;
+        color: var(--icon-color);
+        transition: color 0.3s ease;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    }
+    
+    
     .scroll-container {
         height: auto;
         overflow-y: visible;
