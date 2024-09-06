@@ -1,62 +1,80 @@
-// Nav Bar
-const body = document.querySelector("body"),
-    nav = document.querySelector("nav"),
-    sidebarOpen = document.querySelector(".sidebarOpen"),
-    sidebarClose = document.querySelector(".siderbarClose");
-
-// JS code to toggle sidebar
-sidebarOpen.addEventListener("click", () => {
-    nav.classList.add("active");
-});
-
-sidebarClose.addEventListener("click", () => {
-    nav.classList.remove("active");
-});
-
-body.addEventListener("click", e => {
-    let clickedElm = e.target;
-    if (!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")) {
-        nav.classList.remove("active");
+// Timeline animation on scroll
+document.addEventListener('DOMContentLoaded', () => {
+    const timelineItems = document.querySelectorAll('.timeline-item');
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+        }
+      });
+    }, { threshold: 0.2 });
+  
+    timelineItems.forEach(item => observer.observe(item));
+  });
+  
+   
+  // Heading animation
+  function headingAnimation() {
+    var h1 = document.querySelector('h1 .name');
+    var h1Text = h1.textContent;
+    
+    var splittedText = h1Text.split('');
+    var halfValue = Math.ceil(splittedText.length / 2);  
+    var clutter = '';
+  
+    splittedText.forEach(function(elem, idx) {
+      if (idx < halfValue) { 
+        clutter += `<span class="first">${elem}</span>`;
+      } else {
+        clutter += `<span class="second">${elem}</span>`;
+      }
+    });
+  
+    h1.innerHTML = clutter;
+  }
+  
+  headingAnimation();
+  
+  gsap.from("h1 .first", {
+    y: 80,
+    opacity: 0,
+    duration: 0.6,
+    delay: 0.5,
+    stagger: 0.15
+  });
+  
+  gsap.from("h1 .second", {
+    y: 80,
+    opacity: 0,
+    duration: 0.6,
+    delay: 0.5,
+    stagger: -0.15
+  });
+  
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    const timeline = document.querySelector('.timeline');
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    
+    function updateTimeline() {
+        const scrollPosition = window.scrollY;
+        const windowHeight = window.innerHeight;
+        
+        timelineItems.forEach((item, index) => {
+            const itemTop = item.offsetTop;
+            const itemHeight = item.offsetHeight;
+            
+            if (scrollPosition > itemTop - windowHeight + itemHeight / 2) {
+                item.classList.add('active');
+                timeline.style.height = `${(index + 1) * 100 / timelineItems.length}%`;
+            } else {
+                item.classList.remove('active');
+            }
+        });
     }
-});
-
-// Typing text animation
-document.addEventListener('DOMContentLoaded', function () {
-    // Typed.js animation with smooth animation
-    var typed = new Typed('.typing', {
-        strings: ['Frontend Developer', 'Web Designer', 'Programmer'],
-        typeSpeed: 80,
-        backSpeed: 40,
-        backDelay: 1000,
-        loop: true,
-        showCursor: false,
-        cursorChar: '|',
-        smartBackspace: true
-    });
-
-    // Smooth scrolling for navigation links
-    const navLinks = document.querySelectorAll('.nav-links li a');
-
-    navLinks.forEach(link => {
-        link.addEventListener('click', e => {
-            e.preventDefault();
-            const targetId = link.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            targetElement.scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-
-    // Add click effects to buttons
-    const buttons = document.querySelectorAll('.btn');
-
-    buttons.forEach(button => {
-        button.addEventListener('click', () => {
-            button.style.transform = "scale(0.95)";
-            setTimeout(() => {
-                button.style.transform = "scale(1)";
-            }, 200);
-        });
-    });
-});
+    
+    window.addEventListener('scroll', updateTimeline);
+    window.addEventListener('resize', updateTimeline);
+    updateTimeline();
+  });
