@@ -428,6 +428,28 @@ body {
 }
 
 
+/* CONTACT SECTION STYLING */
+
+
+#contact {
+    padding: 30px 60px;
+    text-align: center;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    background-color: var(--btn-color);
+    box-shadow: rgb(117, 187, 249) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    color: var(--text-color);
+    font-size: 1.4em;
+    position: relative;
+    display: inline-block;
+    padding: 5px 30px;
+    border-radius: 5px;
+    animation: fadeIn 1s ease-out;
+} 
+
 .btn {
     text-align: center;
     margin-bottom: 3rem;
@@ -453,7 +475,6 @@ body {
     width: 100%;
     text-align: center;
 }
-
 
 .social-links a {
     font-size: 24px;
