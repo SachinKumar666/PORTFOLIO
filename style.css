@@ -1167,13 +1167,19 @@ body {
         font-size: 14px;
     }
 }
-
+/* 
 @media screen and (max-width: 360px) {
     .main-img img {
         width: 70vw;
         height: 70vw;
         max-width: 150px;
         max-height: 150px;
+    }
+
+    .profile-image img {
+        width: 4rem;
+        height: 4rem;
+        margin-bottom: 1rem;
     }
 
     .project-wrapper {
@@ -1197,7 +1203,7 @@ body {
         font-size: 0.6rem;
         padding: 1px 4px;
     }
-}
+} */
 
 /* Scrolling effect for mobile */
 @media screen and (max-width: 768px) {
