@@ -717,7 +717,9 @@ body {
     font-weight: bold;
     font-size: .6rem;
 }
+
  
+
 
 /* Projects Section Styling */
 
@@ -1119,12 +1121,7 @@ body {
         max-height: 600px;
         overflow-y: auto;
     }
-/* 
-    .sidebar .profile-image img{
-        border-radius: 50%;
-    } */
 
-    
     .sidebar{
         margin-bottom: -40px;
     }
@@ -1140,7 +1137,6 @@ body {
         transition: color 0.3s ease;
         background-color: var(--main-content-bg);
         padding: 10px;
-        margin-left: -15px;
         border-radius: 500px;
         box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
     }
@@ -1150,14 +1146,18 @@ body {
         padding: 4px 8px;
         border-radius: 15px;
         font-size: 8px;
-        margin-left: -15px;
         margin-top: -10px;
         color: var(--icon-color);
         transition: color 0.3s ease;
         box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
     }
     
-    
+
+/* 
+    .sidebar .profile-image img{
+        border-radius: 50%;
+    } */
+
     .scroll-container {
         height: auto;
         overflow-y: visible;
@@ -1193,6 +1193,7 @@ body {
 
     .skill{
         height: 70px;
+        font-size: 10px;
         padding: 10px 20px;
     }
 
@@ -1213,7 +1214,7 @@ body {
     }
 
     .project-wrapper {
-        width: 100%;
+        /* width: 100%; */
         max-width: 300px;
         margin: 0 auto;
     }
@@ -1261,4 +1262,5 @@ body {
         scroll-snap-stop: always;
     }
 }
+
  
