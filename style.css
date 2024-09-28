@@ -717,14 +717,7 @@ body {
     color: var(--text-color);
     font-weight: bold;
     font-size: .6rem;
-}
-<<<<<<< HEAD
-
-
-=======
- 
->>>>>>> 9a9f7942911433167ccb58b62e074ff03a59e686
-/* Projects Section Styling */
+} 
 
 #projects {
     max-width: 1000px;
