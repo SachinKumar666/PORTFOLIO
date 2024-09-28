@@ -243,12 +243,7 @@ body {
     margin-bottom: 60px;
     padding-top: 6rem;
 }
-
-/* Responsive Design */
-
-
-
-
+ 
 /* .line {
     margin: 0;
     --s: 44px;
@@ -495,14 +490,9 @@ body {
     padding-bottom: 10px;
 }
 
-
-/* Responsive styles for hero section and related elements */
-
-
-
-
+ 
 /* About Section Styles */
-/* About Section Styles */
+ 
 #about {
     padding: 60px 60px;
     color: var(--text-color3);
@@ -728,8 +718,12 @@ body {
     font-weight: bold;
     font-size: .6rem;
 }
+<<<<<<< HEAD
 
 
+=======
+ 
+>>>>>>> 9a9f7942911433167ccb58b62e074ff03a59e686
 /* Projects Section Styling */
 
 #projects {
